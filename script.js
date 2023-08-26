@@ -1,11 +1,11 @@
 //run sound
-var runSound = new Audio("run.mp3");
+var runSound = new Audio("Music /run.mp3");
 
 //jump sound
-var jumpSound = new Audio("jump.mp3");
+var jumpSound = new Audio("Music/jump.mp3");
 
 //dead sound
-var deadSound = new Audio("dead.mp3");
+var deadSound = new Audio("Music/dead.mp3");
 
 function keyCheck(event) {
     if (event.which == 13) {
@@ -35,7 +35,7 @@ var runWorkerId = 0;
 
 function run() {
     runImageNumber = (runImageNumber % 8) + 1;
-    boyId.src = "Run (" + runImageNumber + ").png";
+    boyId.src = "Images/Run (" + runImageNumber + ").png";
 }
 
 var jumpImageNumber = 1;
@@ -72,7 +72,7 @@ function jump() {
             moveBlockWorkerId = setInterval(moveBlock, 100);
         }
     }
-    boyId.src = "jump (" + jumpImageNumber + ").png";
+    boyId.src = "Images/jump (" + jumpImageNumber + ").png";
 }
 
 var backgroundId = document.getElementById("background");
@@ -166,7 +166,7 @@ function dead(){
         document.getElementById("endScore").innerHTML = newScore;
     }
 
-    boyId.src ="Dead ("+deadImageNumber+").png";
+    boyId.src ="Images/Dead ("+deadImageNumber+").png";
 }
 
 //page Reload

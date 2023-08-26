@@ -1,6 +1,6 @@
 .background{
     position: absolute;
-    background-image: url("background.png");
+    background-image: url("Images/background.png");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -24,7 +24,7 @@
 }
 .block{
     position: absolute;
-    background-image: url("flame.gif");
+    background-image: url("Images/flame.gif");
     background-size: cover;
     width: 90px;
     height: 150px;
